@@ -19,7 +19,7 @@
     <section class="container flex-column">
       <h1 class="title">Health Track</h1>
 
-      <form class="form flex-column">
+      <form id="register-form" class="form flex-column" action="home.html">
         <p class="form-subtitle">Cadastre-se no nosso app:</p>
 
         <label class="label-form" for="input-full-name">
@@ -29,6 +29,7 @@
             type="text"
             name="full_name"
             id="input-full-name"
+            required
           />
         </label>
 
@@ -39,6 +40,7 @@
             type="email"
             name="email"
             id="input-email"
+            required
           />
         </label>
 
@@ -49,6 +51,7 @@
             type="password"
             name="password"
             id="input-password"
+            required
           />
         </label>
 
@@ -59,12 +62,18 @@
             type="password"
             name="confirm-password"
             id="input-confirm-password"
+            required
           />
         </label>
-      </form>
-      <p class="form-description">*Dados obrigatórios</p>
 
-      <button class="submit-button" type="submit">Cadastrar</button>
+        <p class="form-description">*Dados obrigatórios</p>
+
+        <button id="access-account-button" class="submit-button" type="submit">
+          Cadastrar
+        </button>
+      </form>
     </section>
+
+    <script src="../js/register.js"></script>
   </body>
 </html>

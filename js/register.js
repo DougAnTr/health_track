@@ -1,4 +1,4 @@
-const form = document.getElementById("login-form");
+const form = document.getElementById("register-form");
 
 form.onsubmit = function (e) {
   e.preventDefault();
