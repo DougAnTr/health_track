@@ -1,0 +1,57 @@
+table {
+  width: 100%;
+}
+
+tr {
+  height: 48px;
+}
+
+th {
+  font-size: 1.6rem;
+  color: var(--color-white);
+  font-weight: 500;
+  text-align: center;
+}
+
+th:first-child {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.table-data-row {
+  background-color: var(--color-white);
+  height: 54px;
+
+  border-bottom: 1px solid var(--color-blue-dark);
+}
+
+td {
+  font-size: 1.6rem;
+  color: var(--color-blue-dark);
+  text-align: center;
+}
+
+td:first-child {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.table-button-options {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-red);
+  cursor: pointer;
+}
+
+.table-button-options > img {
+  filter: invert(86%) sepia(100%) saturate(15%) hue-rotate(189deg)
+    brightness(103%) contrast(103%);
+}

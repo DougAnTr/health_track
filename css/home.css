@@ -1,0 +1,13 @@
+.subtitle {
+  font-size: 1.8rem;
+  color: var(--color-black);
+}
+
+.description {
+  font-size: 1.6rem;
+  color: var(--color-grey-fonts);
+}
+
+.history > .description {
+  margin-left: 20px;
+}

@@ -4,8 +4,11 @@
   --color-blue: #7986cb;
   --color-blue-dark: #49599a;
   --color-white: #fff;
+  --color-black: #000;
   --color-red: #e57373;
   --color-grey: #bdbdbd;
+  --color-grey-light: #f2f2f2;
+  --color-grey-fonts: rgba(51, 51, 51, 0.7);
 
   --border-radius: 8px;
 }
@@ -30,13 +33,12 @@ h1 {
   font-size: 3.6rem;
 }
 
-.container {
+.form-container {
   max-width: 500px;
-  /* margin: 0 auto; */
-  height: 100%;
-  padding: 0;
+}
 
-  padding-top: 62px;
+.container {
+  padding: 0;
 }
 
 .title {
@@ -46,4 +48,106 @@ h1 {
 
 .blue-background {
   background-color: var(--color-blue);
+}
+
+.grey-light-background {
+  background-color: var(--color-grey-light);
+}
+
+.white-background {
+  background-color: var(--color-white);
+}
+
+header {
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-blue-dark);
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.flex-line {
+  display: flex;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-wrapper {
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 100%;
+  height: 50px;
+
+  padding: 2px 0;
+}
+
+.menu > ul {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  align-items: center;
+}
+
+.menu-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid var(--color-grey);
+
+  list-style: none;
+
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  border: none;
+}
+
+.menu-item:hover .menu-item-icon {
+  filter: invert(72%) sepia(32%) saturate(1622%) hue-rotate(308deg)
+    brightness(88%) contrast(104%);
+}
+
+.active {
+  filter: invert(72%) sepia(32%) saturate(1622%) hue-rotate(308deg)
+    brightness(88%) contrast(104%);
+}
+
+.flex-section {
+  flex: 1;
+}
+
+.button {
+  height: 64px;
+  background-color: var(--color-red);
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color-white);
+  margin-top: 20px;
 }
